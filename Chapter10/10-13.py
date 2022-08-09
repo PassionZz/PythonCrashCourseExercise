@@ -17,11 +17,12 @@ def get_stored_username():
     else:
         return username
 
+
 def get_new_user():
     username = input("What is your name? ")
     filename = 'username.json'
     with open(filename, 'w') as f_obj:
-        json.dump(username,f_obj)
+        json.dump(username, f_obj)
     return username
 
 
@@ -31,14 +32,12 @@ def greet_user():
         verify = input("Are your " + username + " ?(y/n)")
         if verify == 'n':
             username = get_new_user()
-            print("We'll remember you when you come back, " + username +" !")
+            print("We'll remember you when you come back, " + username + " !")
         else:
-            print("Welcome back, "+ username +' !')
+            print("Welcome back, " + username + ' !')
     else:
         username = get_new_user()
         print("We'll remember you when you come back, " + username + " !")
+
+
 greet_user()
-
-
-
-
