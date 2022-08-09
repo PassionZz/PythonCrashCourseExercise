@@ -1,0 +1,4 @@
+In Python you can organize everthing in list
+In Python you can print whatever you want
+In Python you can store key-value in dictionary
+In Python you can get pi
